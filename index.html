@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Ezekiel Portfolio</title>
+    <link rel="icon" href="dist/img/profile2.png" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"
+    />
+
+    <!-- script -->
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .hamburger-line {
+        @apply w-[18px] h-[2px] my-1 block bg-dark;
+      }
+
+      .hamburger-active > span:nth-child(1) {
+        @apply rotate-45;
+      }
+
+      .hamburger-active > span:nth-child(2) {
+        @apply scale-0;
+      }
+
+      .hamburger-active > span:nth-child(3) {
+        @apply -rotate-45;
+      }
+    </style>
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Text Color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: "16px",
+          },
+          extend: {
+            colors: {
+              primary: "#2563EB",
+              dark: "#0f172a",
+              secondary: "#64748b",
+            },
+            screens: {
+              "2xl": "1230px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="bg-transparent fixed bg-white drop-shadow-sm top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="block py-6 tracking-wide">
+              <img
+                src="dist/img/DD.png"
+                alt="David"
+                class="bg-transparent w-10 h-10 rounded-full"
+            /></a>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+
+            <!-- Navbar -->
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-sm rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:rounded-none lg:shadow-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    class="text-base text-dark py-2 mx-5 group-hover:text-primary flex"
+                    href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    class="text-base text-dark py-2 mx-5 group-hover:text-primary flex"
+                    href="#about"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    class="text-base text-dark py-2 mx-5 group-hover:text-primary flex"
+                    href="#projects"
+                    >Projects</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    class="text-base text-dark py-2 mx-5 group-hover:text-primary flex"
+                    href="#testimonials"
+                    >Testimonials</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    class="text-base text-dark py-2 mx-5 group-hover:text-primary flex"
+                    href="#blog"
+                    >Blog</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    class="text-base text-dark py-2 mx-5 group-hover:text-primary flex"
+                    href="#contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <!-- /Navbar -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Home -->
+    <section id="home" class="pt-32 lg:pt-28">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-medium text-primary">
+              Hello there👋, I am
+              <span class="block font-bold text-dark text-3xl mt-1 lg:text-4xl"
+                >David Ezekiel</span
+              >
+            </h1>
+            <h2 class="font-medium text-slate-500 text-lg mb-5 mt-3">
+              Frontend Developer
+            </h2>
+            <p class="font-normal text-secondary mb-10 leading-relaxed">
+              I specialize in building innovative and scalable software
+              solutions to drive business growth and enhance user experiences.
+            </p>
+            <a
+              href="#contact"
+              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out"
+              >Contact Me</a
+            >
+            <a
+              href="https://docs.google.com/document/d/11G89zMVxtmqP2ayF9hc3a5cbUMGTMWCw/edit?usp=sharing&ouid=117670037037308078631&rtpof=true&sd=true"
+              target="_blank"
+              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out"
+              >View My CV</a
+            >
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="mt-10 lg:mt-7 lg:right-0">
+              <img
+                src="dist/img/profile2.png"
+                alt="David"
+                class="max-w-full mx-auto w-96 rounded-full"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Home -->
+
+    <!-- About -->
+    <section id="about" class="pt-36 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-5 lg:w-1/2">
+            <h4 class="text-base font-medium text-primary mb-2">I am a</h4>
+            <h2 class="font-bold text-dark text-2xl lg:text-3xl mb-5">
+              Frontend Developer
+            </h2>
+            <p class="font-normal text-secondary mb-5 leading-relaxed max-w-xl">
+              With expertise in React JS, UI/UX design, and CSS frameworks that
+              helps Me create intuitive and engaging interfaces that are
+              accessible and user friendly. Currently a TIIDELab Fellow student,
+              I am a highly motivated and result-oriented individual with a
+              strong work ethic, a team player and always willing to help
+              others. I'm eager to learn new things and I'm always looking for
+              ways to improve my skills. In my spare time, I enjoy watching
+              movies, sports, and spending time with my family. I'm also an avid
+              reader and I love learning new things.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3 class="font-bold text-dark text-xl lg:text-2xl mb-5 lg:pt-8">
+              Lets Connect
+            </h3>
+            <p class="font-normal text-secondary mb-4 leading-relaxed">
+              You can find me on various social media platforms, don't forget to
+              follow and subscribe to my YouTube channel too.
+            </p>
+            <div class="flex items-center">
+              <!-- Youtube -->
+              <a
+                href="https://www.youtube.com/@DavidEzekielTitus"
+                target="_blank"
+                class="w-10 h-10 mr-2 rounded-full flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-primary hover:text-white duration-300 ease-in-out"
+              >
+                <i class="bx bxl-youtube fill-current text-2xl"></i>
+              </a>
+              <!-- Linkedin -->
+              <a
+                href="https://www.linkedin.com/in/david-titus-a6a926185"
+                target="_blank"
+                class="w-10 h-10 mr-2 rounded-full flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-primary hover:text-white duration-300 ease-in-out"
+              >
+                <i class="bx bxl-linkedin fill-current text-2xl"></i>
+              </a>
+              <!-- Instagram -->
+              <a
+                href="https://twitter.com/Talk2David1"
+                target="_blank"
+                class="w-10 h-10 mr-2 rounded-full flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-primary hover:text-white duration-300 ease-in-out"
+              >
+                <i class="bx bxl-twitter fill-current text-2xl"></i>
+              </a>
+              <!-- Github -->
+              <a
+                href="https://github.com/Talk2David1"
+                target="_blank"
+                class="w-10 h-10 mr-2 rounded-full flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-primary hover:text-white duration-300 ease-in-out"
+              >
+                <i class="bx bxl-github fill-current text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /About -->
+
+    <!-- Projects -->
+    <section id="projects" class="pt-36 pb-16 bg-slate-100">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h2 class="font-bold text-primary text-2xl lg:text-3xl">
+              My Recent Projects
+            </h2>
+          </div>
+        </div>
+        <div
+          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+        >
+          <div class="mb-8 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="dist/img/1.png" class="w-full" alt="edge ledger" />
+            </div>
+            <h3
+              class="font-bold text-dark text-lg lg:text-xl mt-5 mb-3 lg:pt-8"
+            >
+              EdgeLedger Website
+            </h3>
+            <p class="font-normal text-secondary leading-relaxed">
+              Increased visibilty for a finance company that helps people trade
+              cryptocurrency
+
+              <a
+                href="https://edge-ledger-website-seven.vercel.app//"
+                class="text-primary underline inline-block"
+                target="_blank"
+                >Live preview</a
+              >
+              <a
+                href="https://github.com/Talk2David1/Edge-Ledger"
+                class="text-primary underline inline-block"
+                target="_blank"
+                >Github Repo</a
+              >
+            </p>
+          </div>
+          <div class="mb-8 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="dist/img/2.png" class="w-full" alt="ectacia" />
+            </div>
+            <h3
+              class="font-bold text-dark text-lg lg:text-xl mt-5 mb-3 lg:pt-8"
+            >
+              Hotel Website
+            </h3>
+            <p class="font-normal text-secondary leading-relaxed">
+              Helped customers take an online tour of the hotel and make
+              reservations online
+              <a
+                href="https://kejoo.netlify.app/"
+                class="text-primary underline inline-block"
+                target="_blank"
+                >Live preview</a
+              >
+              <a
+                href="https://github.com/Talk2David1/Edge-Ledger"
+                class="text-primary underline inline-block"
+                target="_blank"
+                >Github Repo</a
+              >
+            </p>
+          </div>
+          <div class="mb-8 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img
+                src="dist/img/3.png"
+                class="w-full lg:h-40"
+                alt="travel journal"
+              />
+            </div>
+            <h3
+              class="font-bold text-dark text-lg lg:text-xl mt-5 mb-3 lg:pt-8"
+            >
+              Travel Journal
+            </h3>
+            <p class="font-normal text-secondary leading-relaxed">
+              Every Tourist needs a Diary to keep track and records of memorable
+              events
+              <a
+                href="https://react-travel-application.netlify.app/"
+                class="text-primary underline inline-block"
+                target="_blank"
+                >Live preview</a
+              >
+              <a
+                href="https://github.com/Talk2David1/Tour"
+                class="text-primary underline inline-block"
+                target="_blank"
+                >Github Repo</a
+              >
+            </p>
+          </div>
+          <div class="mb-8 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="dist/img/4.png" class="w-full" alt="loop studio" />
+            </div>
+            <h3
+              class="font-bold text-dark text-lg lg:text-xl mt-5 mb-3 lg:pt-8"
+            >
+              Loop Studio
+            </h3>
+            <p class="font-normal text-secondary leading-relaxed">
+              Created an immersive VR experience using ReactJS to help people
+              escape reality
+              <a
+                href="https://responsive-loopstudio.netlify.app/#"
+                class="text-primary underline"
+                target="_blank"
+                >Live preview</a
+              >
+              <a
+                href="https://github.com/Talk2David1/loop-techaton"
+                class="text-primary underline inline-block"
+                target="_blank"
+                >Github Repo</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Projects -->
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="pt-36 pb-16 bg-slate-100">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h2 class="font-bold text-primary text-2xl lg:text-3xl">
+              What People Say About Me
+            </h2>
+          </div>
+        </div>
+
+        <div
+          class="w-full gap-5 lg:gap-10 px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+        >
+          <div
+            class="relative mt-6 flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+          >
+            <div class="p-6">
+              <img
+                src="dist/img/shams.jpeg"
+                alt="Shams"
+                class="relative inline-block h-[58px] w-[58px] !rounded-full object-cover object-center"
+              />
+
+              <h5
+                class="block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased"
+              >
+                Mr. Shamsudeen Aderoju
+              </h5>
+              <p
+                class="block mb-2 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased"
+              >
+                TIIDELab Program Cordinator
+              </p>
+              <p
+                class="block font-sans text-base font-light leading-relaxed text-inherit antialiased"
+              >
+                "A Passionate and hardworking individual, great team Leader and
+                also great to work with."
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative mt-6 flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+          >
+            <div class="p-6">
+              <img
+                src="dist/img/unclebigbay.png"
+                alt="unclebigbay"
+                class="relative inline-block h-[58px] w-[58px] !rounded-full object-cover object-center"
+              />
+
+              <h5
+                class="block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased"
+              >
+               Mr. Ayodele Samuel Adebayo
+              </h5>
+              <p
+                class="block mb-2 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased"
+              >
+                Software Engineer 
+              </p>
+              <p
+                class="block font-sans text-base font-light leading-relaxed text-inherit antialiased"
+              >
+                "An exceptional frontend developer with impeccable work ethics"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+
+    <!-- Blog Posts -->
+    <section id="blog" class="pt-36 pb-16 bg-slate-100">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h2 class="font-bold text-primary text-2xl lg:text-3xl">
+              My Recent Blog Posts
+            </h2>
+          </div>
+        </div>
+
+        <div
+          class="w-full gap-5 lg:gap-10 px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+        >
+          <div
+            class="relative mt-6 flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+          >
+            <div class="p-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                class="mb-4 h-12 w-12 text-pink-500"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"
+                  clip-rule="evenodd"
+                ></path>
+                <path
+                  d="M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z"
+                ></path>
+              </svg>
+              <h5
+                class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased"
+              >
+              MY TIIDELLAB HEAD OF HOUSE EXPERIENCE 
+              </h5>
+              <p
+                class="block font-sans text-base font-light leading-relaxed text-inherit antialiased"
+              >
+              My one week as Head of House was an amazing one. The journey as HOH began after I and My partner won a task...
+              </p>
+            </div>
+            <div class="p-6 pt-0">
+              <a
+                class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500"
+                href="https://medium.com/@titusdavid39/my-head-of-house-experience-at-tiidelab-fellowship-af34fd4e4530"
+                target="_blank"
+                >
+                <button
+                  class="flex select-none items-center gap-2 rounded-lg py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                  data-ripple-dark="true"
+                >
+                  Read More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="h-4 w-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="relative mt-6 flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+          >
+            <div class="p-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                class="mb-4 h-12 w-12 text-pink-500"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"
+                  clip-rule="evenodd"
+                ></path>
+                <path
+                  d="M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z"
+                ></path>
+              </svg>
+              <h5
+                class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased"
+              >
+              BIG O NOTATION SIMPLIFIED
+              </h5>
+              <p
+                class="block font-sans text-base font-light leading-relaxed text-inherit antialiased"
+              >
+              Big O notation is a way to talk about how long it takes
+              for a computer program to run. It’s like talking about how...
+              </p>
+            </div>
+            <div class="p-6 pt-0">
+              <a
+                class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500"
+                href="https://medium.com/@titusdavid39/big-o-notation-simplified-b58981c167b2"
+                target="_blank"
+              >
+                <button
+                  class="flex select-none items-center gap-2 rounded-lg py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                  data-ripple-dark="true"
+                >
+                  Read More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="h-4 w-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Posts  -->
+
+    <!-- Contact -->
+    <section id="contact" class="pt-36 pb-32">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mb-16">           
+            <h2 class="font-bold text-dark  text-primary text-2xl lg:text-3xl mb-5">
+               Contact Me
+            </h2>
+            <p class="font-normal text-secondary mb-10 leading-relaxed">
+              For collaboration, questions, or job offers, please fill out the message form below
+            </p>
+          </div>
+        </div>
+        <form action="">
+          <div class="w-full lg:w-2/3">
+            <div class="w-full px-4 mb-8">
+              <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                class="text-base border-b w-full text-dark pb-3 focus:outline-none focus:border-primary"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                class="text-base border-b w-full text-dark pb-3 focus:outline-none focus:border-primary"
+              />
+            </div>
+            <div class="w-full px-4 mb-12">
+              <textarea
+                type="text"
+                id="comment"
+                placeholder="write Your message"
+                class="text-base border-b w-full text-dark pb-3 h-32 focus:outline-none focus:border-primary"
+              ></textarea>
+            </div>
+            <div class="px-4">
+              <a
+                href="#contact"
+                class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out"
+                >Send Message</a
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- /Contact -->
+
+    <!-- Footer -->
+    <footer class="bg-dark pt-24 pb-12">
+      <div class="container">
+        <div class="w-full pt-4">
+          <div class="flex items-center justify-center mb-5">
+            <!-- Youtube -->
+            <a
+                href="https://www.youtube.com/@DavidEzekielTitus"
+                target="_blank"
+                class="w-10 h-10 mr-2 rounded-full flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-primary hover:text-white duration-300 ease-in-out"
+              >
+                <i class="bx bxl-youtube fill-current text-2xl"></i>
+              </a>
+            <!-- Linkedin -->
+            <a
+            href="https://www.linkedin.com/in/david-titus-a6a926185"
+            target="_blank"
+            class="w-10 h-10 mr-2 rounded-full flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-primary hover:text-white duration-300 ease-in-out"
+          >
+            <i class="bx bxl-linkedin fill-current text-2xl"></i>
+          </a>
+            <!-- Instagram -->
+            <a
+            href="https://twitter.com/Talk2David1"
+            target="_blank"
+            class="w-10 h-10 mr-2 rounded-full flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-primary hover:text-white duration-300 ease-in-out"
+          >
+            <i class="bx bxl-twitter fill-current text-2xl"></i>
+          </a>
+            <!-- Github -->
+            <a
+                href="https://github.com/Talk2David1"
+                target="_blank"
+                class="w-10 h-10 mr-2 rounded-full flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-primary hover:text-white duration-300 ease-in-out"
+              >
+                <i class="bx bxl-github fill-current text-2xl"></i>
+              </a>
+          
+          </div>
+          <p class="text-slate-500 text-sm text-center">
+            Made by
+            <a href="#" class="text-primary font-medium">David</a>, using
+            <a href="" class="text-sky-500 font-medium">Tailwindcss</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
